@@ -1,0 +1,71 @@
+@model ForgingAhead.Models.Character 
+@section header {
+	<meta name="description" content="Form for creating a character in ForgingAhead"> 
+}
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3>Create</h3>
+	</div>
+	<div class="panel-body">
+		<form asp-action="Create" asp-controller="Character">
+			<div class="form-horizontal">
+				<h4>Character</h4>
+				<hr />
+
+				<div class="form-group">
+					<label class="control-label col-md-2" asp-for="Name"></label>
+					<div class="col-md-6">
+						<input type="text" class="form-control" asp-for="Name" />
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-md-2" asp-for="Level"></label>
+					<div class="col-md-6">
+						<input type="number" class="form-control" asp-for="Level" />
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-md-2" asp-for="Strength"></label>
+					<div class="col-md-6">
+						<input class="form-control" asp-for="Strength" />
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-md-2" asp-for="Dexterity"></label>
+					<div class="col-md-6">
+						<input class="form-control" asp-for="Dexterity" />
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-md-2" asp-for="Intelligence"></label>
+					<div class="col-md-6">
+						<input class="form-control" asp-for="Intelligence" />
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-offset-2 col-md-6">
+						<div class="checkbox">
+							<label asp-for="isActive">
+            <input type="checkbox" id="isActive" name="isActive" value="true" /> Is Active
+          </label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-offset-2 col-md-10">
+						<button type="submit" class="btn btn-default">Create</button>
+						<button type="" class="btn btn-danger">Go Back</button>
+					</div>
+				</div>
+
+			</div>
+		</form>
+	</div>
+</div>

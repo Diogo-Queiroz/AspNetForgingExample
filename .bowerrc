@@ -1,0 +1,7 @@
+{
+    "directory": "wwwroot/lib",
+    "registry": "http://bower.herokuapp.com",
+    "proxy": "http://diogo.queiroz:ansomaco456@172.16.0.1:80",
+    "https-proxy": "http://diogo.queiroz:ansomaco456@172.16.0.1:80",
+    "strict-ssl": false
+}

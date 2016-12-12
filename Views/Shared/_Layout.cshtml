@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - ForgingAhead</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+    @RenderSection("header", required: false)
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a asp-area="" asp-controller="Character" asp-action="Index" class="navbar-brand">Home</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="collapse-menu">
+          <ul class="nav navbar-nav">
+            <li>
+              <a asp-area="" asp-controller="Character" asp-action="Create">Create</a>
+            </li>
+            <li>
+              <a asp-area="" asp-controller="Character" asp-action="GetActive">Active</a>
+            </li>
+            <li>
+              <a asp-area="" asp-controller="Equipment" asp-action="Index">Equipments</a>
+            </li>
+          </ul>
+      </div>
+
+      </div>
+    </div>
+      <div class="container">
+        @RenderBody()
+      </div>      
+    </div>
+    <hr />
+    <footer class="footer">
+      <div class="container">
+        <div class="texto-footer">
+          <p>&copy; 2016 - ForgingAhead</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

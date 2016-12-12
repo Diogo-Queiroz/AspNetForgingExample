@@ -1,0 +1,36 @@
+@model ForgingAhead.Models.Character
+
+@section header {
+  <meta name="description" content="List of all characters in ForgingAhead">
+}
+
+<div class="col-md-5 bordered-div">
+  <h4>@Model.Name</h4>
+  <div class="pull-right">
+    <a asp-action="Details" asp-controller="Character" asp-route-name="@Model.Name"><span class="glyphicon glyphicon-user"></span></a>
+    <a asp-action="Update" asp-controller="Character" asp-route-id="@Model.ID"><span class="glyphicon glyphicon-pencil"></span></a>
+    <a asp-action="Delete" asp-controller="Character" asp-route-id="@Model.ID"><span class="glyphicon glyphicon-trash"></span></a>
+  </div>
+
+  <hr />
+  <div class="col-md-6">
+    <div class="form-group">
+      <label asp-for="Level" class="control-label col-md-8"></label>
+      <div class="col-sm-3">
+        <p class="form-control-static">@Model.Level</p>
+      </div>
+      <label asp-for="Strength" class="control-label col-md-8"></label>
+      <div class="col-sm-3">
+        <p class="form-control-static">@Model.Strength</p>
+      </div>
+      <label asp-for="Dexterity" class="control-label col-md-8"></label>
+      <div class="col-sm-3">
+        <p class="form-control-static">@Model.Dexterity</p>
+      </div>
+      <label asp-for="Intelligence" class="control-label col-md-8"></label>
+      <div class="col-sm-3">
+        <p class="form-control-static">@Model.Intelligence</p>
+      </div>
+    </div>
+  </div>
+</div>

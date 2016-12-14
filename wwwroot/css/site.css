@@ -20,3 +20,18 @@ body {
 .texto-footer {
     margin: 20px 0;
 }
+
+.card-image-paper {
+    background-image: url("../images/paperBackground.jpg");
+    background-size: 473px 206px;
+}
+
+.card-name {
+    padding-top: 22px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-content {
+    padding-left: 55px;
+}

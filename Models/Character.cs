@@ -15,6 +15,6 @@ namespace ForgingAhead.Models
         public int Dexterity {get; set;}
         public int Intelligence {get; set;}
 
-        //public List<Equipment> Equipment {get; set;}
+        public List<EquipChar> EquipChars {get; set;}
     }
 }

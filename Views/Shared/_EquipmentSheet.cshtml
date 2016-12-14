@@ -7,7 +7,7 @@
 <div class="col-md-5 bordered-div">
   <h4>@Model.Name</h4>
   <div class="pull-right">
-    <a asp-action="Details" asp-controller="Equipment" asp-route-name="@Model.Name"><span class="glyphicon glyphicon-user"></span></a>
+    <a asp-action="Details" asp-controller="Equipment" asp-route-id="@Model.ID"><span class="glyphicon glyphicon-user"></span></a>
     <a asp-action="Update" asp-controller="Equipment" asp-route-id="@Model.ID"><span class="glyphicon glyphicon-pencil"></span></a>
     <a asp-action="Delete" asp-controller="Equipment" asp-route-id="@Model.ID"><span class="glyphicon glyphicon-trash"></span></a>
   </div>

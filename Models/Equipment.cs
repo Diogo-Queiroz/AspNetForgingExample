@@ -10,5 +10,7 @@ namespace ForgingAhead.Models
         public string Name {get; set;}
         public int Preco {get; set;}
         public string Tipo {get; set;}
+
+        public List<EquipChar> EquipChars {get;set;}
     }
 }

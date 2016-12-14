@@ -1,0 +1,16 @@
+@model List<ForgingAhead.Models.EquipChar>
+
+  <h1>Charater With Equipments</h1>
+
+  <p>
+    <a asp-action="Index" asp-controller="Character">Home</a>
+  </p>
+
+  <div class="row">
+    <ul>
+    @foreach (var item in Model)
+    {
+      <li>@item.CharacterId || @item.EquipmentId</li>
+    }
+    </ul>
+  </div>
